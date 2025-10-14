@@ -69,6 +69,10 @@
             to: "#how-it-works"
         },
         {
+            label: "Challenges",
+            to: "#challenges"
+        },
+        {
             label: "Features",
             to: "#features",
         },
@@ -101,7 +105,7 @@
             children: [
                 {
                     label: "Purchase Challenge",
-                    to: ""
+                    to: "#challenges"
                 },
                 {
                     label: "Log In",
