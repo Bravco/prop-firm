@@ -3,7 +3,7 @@
         id="how-it-works"
         headline="3 easy steps"
         title="How it works"
-        description="Connect, chat, and collaborate — we make brand partnerships fast and frictionless."
+        description="Get funded to trade — prove your skills, earn capital, and keep the profits."
         :ui="{ headline: 'text-secondary' }"
     >
         <UPageGrid>
@@ -25,16 +25,16 @@
 <script lang="ts" setup>
     const cards = ref([
         {
-            title: "Set up your profile",
-            description: "Create a profile as a business or influencer and showcase what makes you unique."
+            title: "Buy a trading challenge",
+            description: "You can choose from variety of challenges we offer."
         },
         {
-            title: "Discover business partners",
-            description: "Browse through verified partners and find the ones that align with your audience."
+            title: "Pass the evaluation",
+            description: "Follow the rules and reach the profit target to pass the challenge."
         },
         {
-            title: "Start collaborating",
-            description: "Send and receive deal requests directly through the app."
-        }
+            title: "Become a funded trader",
+            description: "With a funded account you can recieve payouts from your profits."
+        },
     ]);
 </script>
