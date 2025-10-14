@@ -3,7 +3,7 @@
         id="features"
         headline="Features"
         title="Everything you need"
-        description="Stop searching for brand deals. Focus on the product while pakt finds brand deals for you."
+        description="Designed to help traders maximize profits, manage risk, and scale their funded accounts with confidence."
         :ui="{ headline: 'text-secondary' }"
     >
         <UPageGrid>
@@ -13,7 +13,16 @@
                 v-bind="card"
                 variant="subtle"
                 :spotlight="true"
-            />
+            >
+                <NuxtImg
+                    v-if="card.image"
+                    :src="card.image"
+                    :alt="card.title"
+                    loading="lazy"
+                    class="grayscale-100"
+                />
+                <Placeholder v-if="card.image === ''" class="h-50"/>
+            </UPageCard>
         </UPageGrid>
     </UPageSection>
 </template>
@@ -21,34 +30,30 @@
 <script lang="ts" setup>
     const cards = ref([
         {
-            icon: "i-lucide-star",
-            title: "Reviews & Ratings",
-            description: "Build trust with transparent feedback from verified users."
-        },
-        {
-            icon: "i-lucide-badge-check",
-            title: "Verified Profiles",
-            description: "Ensure authenticity with identity-checked user profiles."
-        },
-        {
-            icon: "i-lucide-message-circle-more",
-            title: "Built-in Messaging",
-            description: "Communicate easily and securely without leaving the platform."
-        },
-        {
-            icon: "i-lucide-handshake",
-            title: "Deal Management Dashboard",
-            description: "Track offers, negotiations, and agreements all in one place."
-        },
-        {
             icon: "i-lucide-bar-chart-3",
-            title: "Analytics for Engagement & Reach",
-            description: "Gain insights into your activity, visibility, and performance."
+            title: "Advanced Trading Dashboard",
+            description: "Track your performance, rules, and payouts in real time.",
+            image: "",
+            class: "lg:col-span-2",
+            orientation: "horizontal"
         },
         {
-            icon: "i-lucide-bot",
-            title: "Smart Matching Algorithm",
-            description: "Get personalized connections that fit your goals and preferences."
+            icon: "i-lucide-arrow-left-right",
+            title: "Low-Latency Trade Execution",
+            description: "Execute trades instantly with minimal slippage across all assets."
+        },
+        {
+            icon: "i-lucide-zap",
+            title: "Instant Funding Approval",
+            description: "Get funded in minutes — no delays, just fast access to your trading capital."
+        },
+        {
+            icon: "i-lucide-bitcoin",
+            title: "Crypto Payouts",
+            description: "Withdraw your profits in crypto, anytime, anywhere, with full transparency.",
+            image: "/images/crypto.webp",
+            class: "lg:col-span-2",
+            orientation: "horizontal"
         }
     ]);
 </script>
