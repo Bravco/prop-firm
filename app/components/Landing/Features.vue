@@ -19,9 +19,8 @@
                     :src="card.image"
                     :alt="card.title"
                     loading="lazy"
-                    class="grayscale-100"
+                    class="w-full max-h-50 object-contain object-center"
                 />
-                <Placeholder v-if="card.image === ''" class="h-50"/>
             </UPageCard>
         </UPageGrid>
     </UPageSection>
@@ -33,7 +32,7 @@
             icon: "i-lucide-bar-chart-3",
             title: "Advanced Trading Dashboard",
             description: "Track your performance, rules, and payouts in real time.",
-            image: "",
+            image: "/images/chart.webp",
             class: "lg:col-span-2",
             orientation: "horizontal"
         },
