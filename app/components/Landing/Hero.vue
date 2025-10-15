@@ -17,12 +17,12 @@
             />
         </template>
         <template #title>
-            A sea of <span class="text-primary">opportunities</span>
+            We make <span class="text-primary">funded</span> traders
         </template>
         <template #description>
             <p>
-                Empowering brands and influencers to collaborate smarter, not harder.<br>
-                Find your perfect match, launch impactful campaigns, and make every partnership count.
+                Get evaluated, get funded, and start earning.<br>
+                Transparent rules, instant payouts, and scalable funding for serious traders.
             </p>
         </template>
         <template #default>
@@ -36,10 +36,18 @@
 
     const links = ref<ButtonProps[]>([
         {
-            label: "Get started - for free",
-            to: "/",
-            trailingIcon: "i-lucide-arrow-right",
+            label: "Get started",
+            to: "#challenges",
+            icon: "i-lucide-rocket",
             size: "lg"
+        },
+        {
+            label: "How it works",
+            to: "#how-it-works",
+            icon: "i-lucide-circle-question-mark",
+            size: "lg",
+            color: "neutral",
+            variant: "outline"
         }
     ]);
 </script>
