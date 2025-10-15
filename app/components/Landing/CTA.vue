@@ -1,7 +1,7 @@
 <template>
     <UPageSection id="waitlist">
         <UPageCTA
-            description="Get latest updates on pakt and be the first one to try it out!"
+            description="Be the first to know about new updates, features and exclusive discounts!"
             variant="subtle"
         >
             <template #title>
