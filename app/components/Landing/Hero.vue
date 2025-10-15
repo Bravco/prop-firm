@@ -26,7 +26,9 @@
             </p>
         </template>
         <template #default>
-            <Placeholder class="h-150"/>
+            <Placeholder class="h-150">
+                <span class="text-center text-3xl sm:text-4xl lg:text-5xl font-medium text-muted">Coming soon...</span>
+            </Placeholder>
         </template>
     </UPageHero>
 </template>
