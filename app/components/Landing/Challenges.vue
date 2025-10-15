@@ -69,7 +69,8 @@
             description: "Account Size",
             price: "$49",
             button: {
-                label: "Buy Now"
+                label: "Buy Now",
+                to: "#waitlist"
             }
         },
         {
@@ -82,7 +83,8 @@
                 color: "secondary"
             },
             button: {
-                label: "Buy Now"
+                label: "Buy Now",
+                to: "#waitlist"
             }
         },
         {
@@ -91,7 +93,8 @@
             description: "Account Size",
             price: "$179",
             button: {
-                label: "Buy Now"
+                label: "Buy Now",
+                to: "#waitlist"
             }
         },
         {
@@ -100,7 +103,8 @@
             description: "Account Size",
             price: "$249",
             button: {
-                label: "Buy Now"
+                label: "Buy Now",
+                to: "#waitlist"
             }
         },
         {
@@ -109,7 +113,8 @@
             description: "Account Size",
             price: "$469",
             button: {
-                label: "Buy Now"
+                label: "Buy Now",
+                to: "#waitlist"
             }
         }
     ]);

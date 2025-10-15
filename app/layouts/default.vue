@@ -8,7 +8,7 @@
             <UNavigationMenu :items="items" variant="link"/>
 
             <template #right>
-                <UButton label="Sign in" to="/"/>
+                <UButton label="Sign in" to="#waitlist"/>
             </template>
 
             <template #body>
